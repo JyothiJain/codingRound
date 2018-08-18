@@ -40,10 +40,10 @@ public class SignInTest extends BaseSetup {
         String credentials = dataProvider.readData("login.csv");
         String userCred[] = credentials.split(",");
         Login login = new Login();
-        login.signin();
+        login.toSignIn();
         driver.switchTo().frame("modal_window");
         SignIn signIn = new SignIn();
-        signIn.signin(userCred[0], userCred[1]);
+        signIn.signIn(userCred[0], userCred[1]);
         waitFor(5000);
         String profileName = driver.findElement(By.id("userAccountLink")).getAttribute("title");
         Assert.assertEquals("jyothi92.jain@gmail.com", profileName);
