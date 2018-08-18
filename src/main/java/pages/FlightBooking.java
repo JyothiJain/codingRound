@@ -59,6 +59,5 @@ public class FlightBooking extends Login {
         private WebElement searchBtn;
 
 
-
     }
 }

@@ -4,9 +4,6 @@ import commons.BaseSetup;
 import commons.DataProvider;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-
-import org.openqa.selenium.WebElement;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -14,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.FileNotFoundException;
 
 
-public class FlightBaseSetupTest extends BaseSetup {
+public class FlightBookingTest extends BaseSetup {
 
     @BeforeMethod
     public void setup() {
